@@ -1,6 +1,6 @@
-import _ from 'lodash'
+import _ from 'lodash';
 
-/******
+/** ****
   INPUT
   =====
     [{
@@ -24,7 +24,7 @@ import _ from 'lodash'
 */
 
 
-export const buildStandardStates = data => {
+export const buildStandardStates = (data) => {
   // work goes here
 
 }

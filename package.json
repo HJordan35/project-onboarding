@@ -22,9 +22,8 @@
     "eslint": "^4.10.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "mocha": "^4.0.1",
-    "pre-commit": "^1.2.2",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "mocha": "^4.0.1"
   },
   "pre-commit": [
     "check"
@@ -33,7 +32,17 @@
     "parser": "babel-eslint",
     "extends": "airbnb-base",
     "env": {
-      "node": true
+      "node": true,
+      "mocha": true
+    },
+    "rules": {
+      "linebreak-style": 0,
+      "global-require": 0,
+      "eslint linebreak-style": [
+        0,
+        "error",
+        "windows"
+      ]
     },
     "plugins": [
       "import"

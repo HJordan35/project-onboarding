@@ -1,21 +1,21 @@
-import { expect } from 'chai'
+import { expect } from 'chai';
 
-import { buildStandardStates } from '../src/exercise_0'
+import { buildStandardStates } from '../src/exercise_0';
 
 describe('buildStandardStates', () => {
   it('builds a standard state', () => {
     const data = [
       { standard: 'standard/pci_dss_3_2', state: 'passed' },
-      { standard: 'standard/pci_dss_3_2', state: 'failed' }
-    ]
+      { standard: 'standard/pci_dss_3_2', state: 'failed' },
+    ];
 
-    const result = buildStandardStates(data)
+    const result = buildStandardStates(data);
 
     expect(result).to.be.deep.members([{
       standard: 'standard/pci_dss_3_2',
-      state: { passed: 1, failed: 1 }
-    }])
-  })
+      state: { passed: 1, failed: 1 },
+    }]);
+  });
 
   // it('builds two standard states', () => {
   //   const data = [
@@ -117,4 +117,4 @@ describe('buildStandardStates', () => {
   //     }
   //   }])
   // })
-})
+});
