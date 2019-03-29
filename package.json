@@ -1,0 +1,57 @@
+{
+  "name": "@project/on-boarding",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "Project On-boarding Exercise",
+  "main": "src",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint src test",
+    "test": "mocha --recursive test/exercise_0_spec --require babel-register"
+  },
+  "author": "Henry Jordan",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
+    "pre-commit": "^1.2.2",
+    "lodash": "^4.17.11"
+  },
+  "pre-commit": [
+    "check"
+  ],
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb-base",
+    "env": {
+      "node": true
+    },
+    "plugins": [
+      "import"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": true
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "moment": "^2.23.0"
+  }
+}
